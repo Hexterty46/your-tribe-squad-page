@@ -1,7 +1,8 @@
-const SearchInput = document.querySelector('article input[type="search"]');
-const studenten = document.querySelectorAll('.mugshot.student');
-const meerFotosKnop = document.querySelector('.meer-fotos');
+const SearchInput = document.querySelector('article input[type="search"]'); //varibale voor de input
+const studenten = document.querySelectorAll('.mugshot.student'); //voor de filter systeem van de mugshots
+const meerFotosKnop = document.querySelector('.meer-fotos'); //variable voor de meer foto's knop
 
+// fucntie om te kijken of er 3 of 4 foto's word weergegeven
 function getMaxVisible() {
   if (window.innerWidth <= 600) { 
     return 3;
@@ -21,7 +22,7 @@ function toonStandaard() {
     }
   });
 }
-
+// Ik roep hier de functie aan om te kijken hoeveel de index is
 toonStandaard();
 
 window.addEventListener('resize', toonStandaard);
@@ -48,7 +49,7 @@ SearchInput.addEventListener('input', function() {
   }
 });
 
-let allesZichtbaar = false;
+let allesZichtbaar = false; //een boolean om te kunnen switchen van meer foto's en minder foto's
 meerFotosKnop.addEventListener('click', () => {
     if (!allesZichtbaar) {
         studenten.forEach(student => student.style.display = '');
