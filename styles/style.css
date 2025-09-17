@@ -98,7 +98,6 @@ header img {
 .wave3, .wave4 {
     width: 100%;
     height: auto;
-    margin: 0;
     display: block;
 }
 /*welkom stuk styling-----------------------------------------------------------------------------------------------------------------*/
@@ -781,16 +780,16 @@ main h1 {
 
 @media only screen and (min-width: 1024px) {
     .welcome-page {
-        padding-top: 0%; /* ruimte boven */
-        align-items: flex-start; /* zet alles netjes naar boven */
+        padding-top: 0%;
+        align-items: flex-start;
     }
 
     #welcome-page-img {
-        margin-top: 0;  /* reset de rare negatieve marge */
+        margin-top: 0;
     }
 
     .welcome-page h1 {
-        margin-top: 0;  /* ook resetten */
+        margin-top: 0;
     }
 }
 
